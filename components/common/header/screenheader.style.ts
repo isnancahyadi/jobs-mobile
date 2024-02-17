@@ -1,8 +1,13 @@
-import { StyleSheet } from "react-native";
+import { DimensionValue, ImageStyle, StyleSheet, ViewStyle } from "react-native";
 
 import { COLORS, SIZES } from "../../../constants";
 
-const styles = StyleSheet.create({
+type StyleType = {
+  btnContainer: ViewStyle;
+  btnImg: (dimension: DimensionValue) => ImageStyle;
+}
+
+const styles: StyleType = {
   btnContainer: {
     width: 40,
     height: 40,
@@ -16,6 +21,6 @@ const styles = StyleSheet.create({
     height: dimension,
     borderRadius: SIZES.small / 1.25,
   }),
-});
+};
 
 export default styles;
