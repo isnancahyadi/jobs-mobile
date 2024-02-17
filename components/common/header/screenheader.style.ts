@@ -1,6 +1,5 @@
 import { DimensionValue, ImageStyle, StyleSheet, ViewStyle } from "react-native";
-
-import { COLORS, SIZES } from "../../../constants";
+import { COLORS, SIZES } from "@/constants";
 
 type StyleType = {
   btnContainer: ViewStyle;
